@@ -1,0 +1,16 @@
+<mvc:View controllerName="DemoCustomControl.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:cust="DemoCustomControl.control">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<cust:CustomList items="{/grid}">
+						<cust:items>
+							<cust:CustomListItem href1="{hyperlink}" src1="{image}"/>
+						</cust:items>
+					</cust:CustomList>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
